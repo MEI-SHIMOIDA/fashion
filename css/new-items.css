@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+body{
+    text-align: center;
+    font-family: 'STIX Two Text', serif;
+}
+/* nav area */
+.logo{
+    display: flex;
+    list-style: none;
+}
+li #search{
+    position: relative;
+    width: 160px;
+    height: 40px;
+    padding: 0px 5px;
+    text-align: left;
+    border-radius: 30px;
+    border: 1px solid gray;
+    outline: none;
+}
+#search input{
+    position: absolute;
+    height: 30px;
+    border: none;   
+    top: 3px;
+    left: 15px;
+    outline: none;
+    text-align: right;
+}
+.btn img{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn img:hover{
+    opacity: 0.5;
+}
+.fa-solid{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.fa-regular{ 
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+#global-navi{
+    display: none;
+}
+.hbg-menu{
+    list-style: none;
+}
+#wrapper-item ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(54, 54, 54,0.5);
+}
+/* main area */
+main{
+    width: 80%;
+}
+/* slider */
+.carousel{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-inner{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 -10px;
+    /* nagative margin = create space between imges */
+}
+.carousel-item{
+    flex: 0 0 calc(100% - 20px); /* caluculate= create each space / 3items=33.33% */
+    max-width: calc(100% - 20px);
+    margin: 0 10px; /*左右に隙間できる*/
+    box-sizing: border-box;
+}
+.carousel-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.carousel-next, .carousel-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.carousel-next{
+    right: 10px;
+}
+.carousel-prev{
+    left: 10px;
+}
+
+/* section2 */
+.section-2{
+    width: 100%;
+    gap: 15px;
+}
+.section-2 img{
+        width: 90%;
+        height: 350px;
+        object-fit: cover;
+        object-position: 0px 5px;
+        /* margin-bottom: 40px; */
+}
+.title{
+    width: 80%;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.all-items a{
+    text-decoration: none;
+}
+.all-items p{
+    color: black;
+}
+.all-items p:nth-child(3){
+    margin-bottom: 40px;
+}
+.section-2-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+}
+#section-2-wrapper .all-items{
+    margin: 0;     /* *margin:auto;→０に変えた */
+    flex-basis: 23%;
+}
+#section-2-wrapper .all-items img{
+    width: 100%;
+    height: 400px;
+    object-position: 0;
+    /* border: 2px dashed green; */
+}
+#section-2-wrapper .all-items img:nth-child(1){ /*画像の位置変更*/
+    object-position: 60%;
+}
+
+#section-2-wrapper .all-items img:hover{
+    transition: 0.5s all;
+    opacity: 0.5;  /*画像の不透明度*/
+}
+/* footer */
+.footer-social{
+    color: #fff;
+    background-color: rgba(189, 180, 164, 0.5);
+    overflow: auto;
+    padding: 1em 7.5%;
+    margin-top: 2em;
+    display: flex;
+}
+.social-widget{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
+
+.social-widget h3{
+    text-transform: uppercase;
+}
+
+.social-widget img{
+    width: 5em;
+}
+.icon img{
+    width: 1.5em;
+}
+
+
+@media(max-width:768px){
+  .logo{
+    justify-content: center;
+    padding: 0 20%;
+}
+/* ① */
+.logo img{
+    width: 80%;
+}
+.logo li a{
+    font-size: 10px;
+}
+li #search{
+    width: 100px;
+    height: 30px;
+    padding: 0px 5px;
+}
+#search{
+    padding: 20px;
+}
+#search input{
+    width: 90px;
+    height: 10px; 
+    top: 10px;
+    left: 5px;
+}
+.btn img{
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+}
+.fa-solid{
+    display: inline;
+    font-size: 12px;
+    color: gray;
+}
+.fa-regular{
+    display: inline;
+    font-size: 15px;
+    color: gray;
+    padding: 20px;
+}
+.menu li{
+    flex: 1;
+}
+  .title{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+  .section-2 #section-2-wrapper {
+        flex-wrap: wrap;
+    }
+    #section-2-wrapper .all-items{
+        margin: 0;     /* *margin:auto;→０に変えた */
+        flex-basis: 46%;  /*2行にしたいから数値大きくした*/
+    }
+    #section-2-wrapper .all-items:nth-child(2){
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:480px){
+    .logo img{
+        width: 70%;
+    }
+    li #search{
+        width: 60px;
+        height: 10px;
+    }
+    #search{
+        padding: 10px;
+    }
+    #search input{
+        width: 40px;
+        height: 10px; 
+        top: 0;
+        left: 20px;
+    }
+    .btn img{
+        top: 1px;
+        width: 8px;
+        height: 8px;
+    }
+    .fa-solid{
+        display: inline;
+        font-size: 12px;
+        color: gray;
+    }
+    .fa-regular{
+        font-size: 10px;
+    }
+    /* ここまで */
+    #wrapper-item{
+        display: none;
+    }
+    #global-navi{
+        display: list-item;
+    }
+    .hbg-menu{
+        list-style: none;
+    }
+    #wrapper nav{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        padding-top: 50px;
+        background: rgba(33,33,33,0.9);
+        font-size: 16px;
+        box-sizing: border-box;
+        z-index: 2;
+        list-style: none;
+    }
+    #wrapper nav ul li{
+        padding: 20px 28px;
+    }
+    #wrapper nav ul li a{
+        text-decoration: none;
+        color: #ddd;
+    }
+    #wrapper .btn-gnavi{
+        position: fixed;
+        top: 6px;
+        right: 24px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+    }
+    #wrapper .btn-gnavi span {
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        right: 6px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnavi span:nth-child(1){
+        top: 0;
+    }
+    #wrapper .btn-gnavi span:nth-child(2){
+        top: 10px;
+    }
+    #wrapper .btn-gnavi span:nth-child(3){
+        top: 20px;
+    }
+    #wrapper .btn-gnavi.open{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    #wrapper .btn-gnavi.open span{
+        background: #fff;
+    }
+    #wrapper .btn-gnavi.open span:nth-child(1){
+        width: 24px;
+        -webkit-transform: translate(-7px,17px) rotate(45deg);
+        transform: translate(-7px,17px) rotate(45deg);
+    }
+    #wrapper .btn-gnavi.open span:nth-child(3){
+        width: 24px;
+        -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+        transform: translate(-7px,-17px) rotate(-45deg);
+    }
+    .information h1{
+        top: 7%;
+        left: 25%;
+    }
+    .title{
+        height: 60%;
+        top: 17%;
+        left: 16%;
+        text-align: center;
+        padding: 20px;
+    }
+    .text{
+        font-size: 14px;
+        top: 36%;
+        left: 34%;
+    }
+    input{
+        width: 40%;
+    }
+    a input{
+        width: 30%;
+        height: 30px;
+    }
+    .carousel-item{
+        margin: 20px 10px;
+    }
+    .section-2 img{
+        height: 150px;
+        }
+        .menu{
+            flex-wrap: wrap;
+            width: 80%;
+            font-size: 10px;
+        }
+        .menu li{
+            padding: 2px;
+        }
+         /* btn box */
+         .container{
+            width: 90%;
+            display: flex;
+            position: relative;
+            gap: 2px;
+        }
+        .menu-item{
+            flex-basis: 100%;    /*gapは5pxのままitemは約50%キープ*/
+            position: relative;
+        }
+        .menu-item img{
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+}

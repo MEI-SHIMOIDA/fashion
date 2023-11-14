@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 12px; */
+
+}
+/* nav area */
+.logo{
+    display: flex;
+    list-style: none;
+}
+li #search{
+    position: relative;
+    width: 160px;
+    height: 40px;
+    padding: 0px 5px;
+    text-align: left;
+    border-radius: 30px;
+    border: 1px solid gray;
+    outline: none;
+}
+#search input{
+    position: absolute;
+    height: 30px;
+    border: none;   
+    top: 3px;
+    left: 15px;
+    outline: none;
+    text-align: right;
+}
+.btn img{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn img:hover{
+    opacity: 0.5;
+}
+.fa-solid{  /*google→fontawesome使うとicon/img探せる*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.fa-regular{ 
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+#global-navi{
+    display: none;
+}
+.hbg-menu{
+    list-style: none;
+}
+#wrapper-item ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(54, 54, 54,0.5);
+}
+/* main */
+main{
+    margin: 5%;
+}
+.login-box{
+    width: 100%;
+    margin-top: 5%;
+}
+h2{
+    display: block;
+    font-size: 35px;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+.text-box{
+    width: 500px;
+    padding: 50px;
+    margin: 100px auto;
+    border: 2px solid rgba(129, 138, 145, .5);
+}
+table{
+    background-color: gray;
+    opacity: 0.5;
+    margin: 10px auto;
+    border: 1px solid rgb(70, 71, 74);
+}
+tr{
+    padding-bottom: 2px;
+}
+.title-1, .title-2{
+    padding: 14px 30px;
+    border: none;
+    border: 1px solid #fff;
+}
+td{
+    padding: 14px 80px;
+    border: 1px solid #fff;
+}
+.text{
+    padding: 3px 30px;
+    width: 80%;
+    text-align: left;
+}
+.btn{
+    padding: 15px 50px;
+    font-weight: 100;
+    color: #000;
+}
+.guide{
+    text-align: right;
+}
+a{
+    color: black;
+}
+.button{
+    text-align: center;
+    margin-top: 40px;
+}
+/* footer */
+/* footer area */
+
+.footer-form *{
+    width: auto;
+}
+
+.footer-social{
+    color: #fff;
+    background-color: rgba(189, 180, 164, 0.5);
+    overflow: auto;
+    padding: 1em 7.5%;
+    margin-top: 2em;
+    display: flex;
+}
+.social-widget{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
+
+.social-widget h3{
+    text-transform: uppercase;
+}
+
+.social-widget img{
+    width: 5em;
+}
+.icon img{
+    width: 1.5em;
+}
+@media(max-width:768px){
+    .logo{
+        justify-content: center;
+        padding: 0 20%;
+    }
+    /* ① */
+    .logo img{
+        width: 80%;
+    }
+    .logo li a{
+        font-size: 10px;
+    }
+    /* ②ここから */
+    li #search{
+        width: 100px;
+        height: 30px;
+        padding: 0px 5px;
+    }
+    #search{
+        padding: 20px;
+    }
+    #search input{
+        width: 90px;
+        height: 10px; 
+        top: 10px;
+        left: 5px;
+    }
+    .btn img{
+        top: 8px;
+        left: 8px;
+        width: 12px;
+        height: 12px;
+    }
+    /* ここまで */
+    .fa-solid{
+        display: inline;
+        font-size: 12px;
+        color: gray;
+    }
+    .fa-regular{
+        display: inline;
+        font-size: 15px;
+        color: gray;
+        padding: 20px;
+    }
+}
+
+@media(max-width:480px){
+    .logo img{
+        width: 70%;
+    }
+    li #search{
+        width: 60px;
+        height: 10px;
+    }
+    #search{
+        padding: 10px;
+    }
+    #search input{
+        width: 40px;
+        height: 10px; 
+        top: 0;
+        left: 20px;
+    }
+    .btn img{
+        top: 1px;
+        width: 8px;
+        height: 8px;
+    }
+    .fa-solid{
+        display: inline;
+        font-size: 12px;
+        color: gray;
+    }
+    .fa-regular{
+        font-size: 10px;
+    }
+    /* ここまで */
+    #wrapper-item{
+        display: none;
+    }
+    #global-navi{
+        display: list-item;
+    }
+    .hbg-menu{
+        list-style: none;
+    }
+    #wrapper nav{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        padding-top: 50px;
+        background: rgba(33,33,33,0.9);
+        font-size: 16px;
+        box-sizing: border-box;
+        z-index: 2;
+        list-style: none;
+    }
+    #wrapper nav ul li{
+        padding: 20px 28px;
+    }
+    #wrapper nav ul li a{
+        text-decoration: none;
+        color: #ddd;
+    }
+    #wrapper .btn-gnavi{
+        position: fixed;
+        top: 6px;
+        right: 24px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+    }
+    #wrapper .btn-gnavi span {
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        right: 6px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnavi span:nth-child(1){
+        top: 0;
+    }
+    #wrapper .btn-gnavi span:nth-child(2){
+        top: 10px;
+    }
+    #wrapper .btn-gnavi span:nth-child(3){
+        top: 20px;
+    }
+    #wrapper .btn-gnavi.open{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    #wrapper .btn-gnavi.open span{
+        background: #fff;
+    }
+    #wrapper .btn-gnavi.open span:nth-child(1){
+        width: 24px;
+        -webkit-transform: translate(-7px,17px) rotate(45deg);
+        transform: translate(-7px,17px) rotate(45deg);
+    }
+    #wrapper .btn-gnavi.open span:nth-child(3){
+        width: 24px;
+        -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+        transform: translate(-7px,-17px) rotate(-45deg);
+    }
+    /* main */
+    h2{
+        font-size: 16px;
+    }
+    .text-box{
+        margin: 50px auto;
+    }
+    .text-box{
+        width: 400px;
+        padding: 10px;
+    }
+    td{
+        padding: 14px 30px;
+    }
+    .text{
+        padding: 3px 30px;
+        width: 70%;
+        text-align: left;
+    }
+    .btn{
+        padding: 7px 25px;
+    }
+    .guide p{
+        font-size: 12px;
+    }
+}

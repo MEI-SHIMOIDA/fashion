@@ -1,0 +1,534 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+body{
+    text-align: center;
+    font-family: 'STIX Two Text', serif;
+}
+.logo{
+    display: flex;
+    list-style: none;
+}
+li #search{
+    position: relative;
+    width: 160px;
+    height: 40px;
+    padding: 0px 5px;
+    text-align: left;
+    border-radius: 30px;
+    border: 1px solid gray;
+    outline: none;
+}
+#search input{
+    position: absolute;
+    height: 30px;
+    border: none;   
+    top: 3px;
+    left: 15px;
+    outline: none;
+    text-align: right;
+}
+.btn img{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn img:hover{
+    opacity: 0.5;
+}
+.fa-solid{  /*google→fontawesome使うとicon/img探せる*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.fa-regular{ 
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+#global-navi{
+    display: none;
+}
+.hbg-menu{
+    list-style: none;
+}
+#wrapper-item ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(54, 54, 54,0.5);
+}
+
+/* 2023 autumn collection */
+.section-2{
+    position: relative;
+}
+#title-autumn{    /*3行に分けたけどboxに対して指定すれば一括指定になる*/
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 10%;
+    font-size: 2em;
+}
+#title-autumn p:nth-child(1){
+    top: 50%;
+}
+#title-autumn p:nth-child(3){
+    top: 70%;
+}
+.section-2 img{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0px 5px;
+    margin-bottom: 40px;
+}
+
+/* main area */
+
+/* box btn */
+.container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* gap: 6px; */  /*gapの値が大きくてデザイン崩れたから消した*/
+}
+.menu-item{
+    /* width: 50%; */
+    flex-basis: 49.7%;    /*gapは5pxのままitemは約50%キープ*/
+    position: relative;
+}
+.menu-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.menu-item img:hover{
+    transition: 0.5 all;
+    opacity: 0.5;
+}
+.menu-text{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 40%;
+    font-size: 20px;
+}
+
+/* sale items area */
+.section-4{
+    width: 80%;
+}
+.section-4-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+.title{
+    width: 80%;
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+.sale-item{
+    /* width: 50%; 　widthじゃなくてflex-basisの方が簡単*/
+    flex-basis: 25%;
+    box-shadow: 2px 2px 4px;
+}
+.sale-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.rate{
+    color: red;
+}
+
+/* information area */
+.information{
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.information p{
+    position: absolute;
+    color: #000;
+    top: 40%;
+    right: 10%;
+    font-size: 2em;
+    text-decoration: none;
+}
+.information p:hover{
+    color: #fff;
+}
+.information img{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 30% 60%;
+}
+/* footer area */
+.footer-contents{
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 32px;
+    display: flex;
+}
+
+.footer-widgets{
+    width: 24%;
+    float: left;
+}
+.footer-widgets a{
+    color: #c7a17a;
+}
+.footer-widgets a:hover{
+    color: #000;
+}
+.footer-widgets p{
+    color: #c7a17a;
+}
+
+.footer th{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.footer-form *{
+    width: auto;
+}
+
+.footer-social{
+    color: #fff;
+    background-color: rgba(189, 180, 164, 0.5);
+    overflow: auto;
+    padding: 1em 7.5%;
+    margin-top: 2em;
+    display: flex;
+}
+.social-widget{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
+
+.social-widget h3{
+    text-transform: uppercase;
+}
+
+.social-widget img{
+    width: 5em;
+}
+.icon img{
+    width: 1.5em;
+}
+
+
+@media(max-width:768px){
+    /* nav */
+    .logo{
+        justify-content: center;
+        padding: 0 20%;
+    }
+    .logo img{
+        width: 80%;
+    }
+    /* .logo li{
+        flex: 1;  
+    } */
+    .logo li a{
+        font-size: 10px;
+    }
+    li #search{
+        width: 100px;
+        height: 30px;
+        padding: 0px 5px;
+    }
+    form{
+        display: flex;
+    }
+    h3{
+        font-size: 15px;
+    }
+    td a{
+        font-size: 12px;
+    }
+    #search{
+        padding: 0;
+    }
+    #search input{
+        width: 90px;
+        height: 10px; 
+        top: 10px;
+        left: 5px;
+    }
+    .btn img{
+        top: 8px;
+        left: 8px;
+        width: 12px;
+        height: 12px;
+    }
+    .fa-solid{
+        display: inline;
+        font-size: 12px;
+        color: gray;
+    }
+    .fa-regular{
+        display: inline;
+        font-size: 15px;
+        color: gray;
+        padding: 20px;
+    }
+    .menu li{
+        flex: 1;
+    }
+   /* 2023 autumn collection */
+    .section-2{
+        margin: 1em 0 1em 0;
+    }
+    #title-autumn{
+        top: 55%;
+        right: 10%;
+        font-size: 1em;
+    }
+    .section-2 img{
+    height: 230px;
+    }
+
+    /* main area */
+    /* btn box */
+    .container{
+        width: 90%;
+        gap: 2px;
+    }
+    .menu-item{
+        flex-basis: 49%; 
+    }
+    .menu-text{
+        top: 45%;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .menu-item img{
+        height: 150px;
+    }
+    /* sale items */
+    .section-4{
+        width: 70%;
+    }
+    .title{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .section-4-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .sale-item{
+        flex-basis: 49%;
+        box-shadow: none;
+    }
+    .sale-item p{
+        font-size: 15px;
+    }
+    /* information */
+    .information{
+        margin-top: 1em;
+    }
+    .information img{
+        height: 230px;
+    }
+    .information p{
+        top: 60%;
+        right: 15%;
+        font-size: 15px;
+    }
+    /* footer */
+    footer p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:480px){
+    /* nav */
+    .logo img{
+        width: 70%;
+    }
+    li #search{
+        width: 60px;
+        height: 10px;
+    }
+    #search{
+        padding: 10px;
+    }
+    #search input{
+        width: 40px;
+        height: 10px; 
+        top: 0;
+        left: 20px;
+    }
+    .btn img{
+        top: 1px;
+        width: 8px;
+        height: 8px;
+    }
+    .fa-solid{
+        display: inline;
+        font-size: 12px;
+        color: gray;
+    }
+    .fa-regular{
+        font-size: 10px;
+    }
+    .section-2{
+        margin: 6px 0 0 0;
+    }
+    #title-autumn{
+        top: 40%;
+        right: 9%;
+        font-size: 15px;
+    }
+    .section-2 img{
+        height: 150px;
+        margin-bottom: 40px;
+    }
+    #wrapper-item{
+        display: none;
+    }
+    #global-navi{
+        display: list-item;
+    }
+    .hbg-menu{
+        list-style: none;
+    }
+    #wrapper nav{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        padding-top: 50px;
+        background: rgba(33,33,33,0.9);
+        font-size: 16px;
+        box-sizing: border-box;
+        list-style: none;
+        z-index: 2;
+    }
+    #wrapper nav ul li{
+        padding: 20px 28px;
+    }
+    #wrapper nav ul li a{
+        text-decoration: none;
+        color: #ddd;
+    }
+    #wrapper .btn-gnavi{
+        position: fixed;
+        top: 6px;
+        right: 24px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+    }
+    #wrapper .btn-gnavi span {
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        right: 6px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnavi span:nth-child(1){
+        top: 0;
+    }
+    #wrapper .btn-gnavi span:nth-child(2){
+        top: 10px;
+    }
+    #wrapper .btn-gnavi span:nth-child(3){
+        top: 20px;
+    }
+    #wrapper .btn-gnavi.open{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    #wrapper .btn-gnavi.open span{
+        background: #fff;
+    }
+    #wrapper .btn-gnavi.open span:nth-child(1){
+        width: 24px;
+        -webkit-transform: translate(-7px,17px) rotate(45deg);
+        transform: translate(-7px,17px) rotate(45deg);
+    }
+    #wrapper .btn-gnavi.open span:nth-child(3){
+        width: 24px;
+        -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+        transform: translate(-7px,-17px) rotate(-45deg);
+    }
+     /* btn box */
+     .container{
+        width: 90%;
+        display: flex;
+        position: relative;
+        gap: 2px;
+    }
+    .menu-item{
+        flex-basis: 100%;    /*gapは5pxのままitemは約50%キープ*/
+        position: relative;
+    }
+    .menu-item img{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    /* sale item */
+    p .title{
+        font-size: 10px;
+        color: blue;
+    }
+    /* information */
+    .information img{
+        height: 150px;
+    }
+    .information p{
+        top: 50%;
+        right: 9%;
+        font-size: 15px;
+    }
+    #search{
+        width: 90px;
+        padding: 0;
+    }
+    .footer-widgets{
+        margin-left: 25px;
+    }
+    .footer-social{
+        margin-top: 20px;
+    }
+}
