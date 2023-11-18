@@ -437,4 +437,15 @@ main{
             height: 100px;
             object-fit: cover;
         }
+    .sale-price{
+        font-size: 16px;
+        left: 40%;
+    }
+    .was-price{
+        font-size: 12px;
+        right: 40%;
+    }
+    #section-2-wrapper .all-items{
+        flex-basis: 100%;  
+    }
 }
