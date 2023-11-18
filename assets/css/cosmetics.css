@@ -263,8 +263,8 @@ main{
         flex-wrap: wrap;
     }
     #section-2-wrapper .all-items{
-        margin: 0;     /* *margin:auto;→０に変えた */
-        flex-basis: 46%;  /*2行にしたいから数値大きくした*/
+        margin: 0;  
+        flex-basis: 46%;  
     }
     #section-2-wrapper .all-items:nth-child(2){
         margin-bottom: 15px;
@@ -437,14 +437,6 @@ main{
             height: 100px;
             object-fit: cover;
         }
-    .sale-price{
-        font-size: 16px;
-        left: 40%;
-    }
-    .was-price{
-        font-size: 12px;
-        right: 40%;
-    }
     #section-2-wrapper .all-items{
         flex-basis: 100%;  
     }
