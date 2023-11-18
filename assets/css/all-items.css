@@ -406,9 +406,6 @@ main{
         flex-wrap: wrap;
     }
     #section-2-wrapper .all-items{
-        flex-basis: 70%;  /*2行にしたいから数値大きくした*/
-    }
-    #section-2-wrapper .all-items:nth-child(2){
-        margin-bottom: 15px;
+        flex-basis: 70%;  /*1行にしたいから数値大きくした*/
     }
 }
