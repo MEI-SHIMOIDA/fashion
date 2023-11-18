@@ -338,8 +338,13 @@ input:hover{
         padding: 20px;
     }
     .text{
+        width: 45%
+        text-align: center;
         font-size: 14px;
-        left: 34%;
+        left: 27%;
+    }
+    p{
+        text-decolation: none;
     }
     input{
         width: 40%;
