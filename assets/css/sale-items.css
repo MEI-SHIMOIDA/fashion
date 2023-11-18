@@ -429,13 +429,13 @@ main{
         }
     .sale-price{
         font-size: 16px;
-        left: 50px;
+        left: 40%;
     }
     .was-price{
         font-size: 12px;
-        right: 50px;
+        right: 40%;
     }
     #section-2-wrapper .all-items{
-        flex-basis: 70%;  /*1行にしたいから数値大きくした*/
+        flex-basis: 100%;  /*1行にしたいから数値大きくした*/
     }
 }
