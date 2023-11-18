@@ -435,10 +435,7 @@ main{
         font-size: 12px;
         right: 40%;
     }
-    #section-2-wrapper .section-2-wrapper{
-        flex-wrap: wrap;  
-    }
     #section-2-wrapper .all-items{
-        flex-basis: 70%;  
+        flex-basis: 100%;  
     }
 }
