@@ -402,10 +402,7 @@ main{
             height: 100px;
             object-fit: cover;
         }
-    .section-2 #section-2-wrapper {
-        flex-wrap: wrap;
-    }
     #section-2-wrapper .all-items{
-        flex-basis: 70%;  /*1行にしたいから数値大きくした*/
+        flex-basis: 100%;  
     }
 }
