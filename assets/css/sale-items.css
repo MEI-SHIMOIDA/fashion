@@ -419,7 +419,7 @@ main{
             gap: 2px;
         }
         .menu-item{
-            flex-basis: 100%;    /*gapは5pxのままitemは約50%キープ*/
+            flex-basis: 100%;    
             position: relative;
         }
         .menu-item img{
@@ -435,7 +435,10 @@ main{
         font-size: 12px;
         right: 40%;
     }
+    #section-2-wrapper .section-2-wrapper{
+        flex-wrap: wrap;  
+    }
     #section-2-wrapper .all-items{
-        flex-basis: 100%;  /*1行にしたいから数値大きくした*/
+        flex-basis: 70%;  
     }
 }
