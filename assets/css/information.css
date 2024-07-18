@@ -344,7 +344,7 @@ input:hover{
         left: 27%;
     }
     p{
-        text-decolation: none;
+        text-decoration: none;
     }
     input{
         width: 40%;
@@ -352,5 +352,6 @@ input:hover{
     a input{
         width: 30%;
         height: 30px;
+        background-color: #fff;
     }
 }
